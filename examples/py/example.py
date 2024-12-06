@@ -6,7 +6,7 @@ parser = argparse.ArgumentParser(
     description='Plays simple micro battles with an attack closest heuristic')
 parser.add_argument('-t', '--hostname', type=str,
                     help='Hostname where SC is running')
-parser.add_argument('-p', '--port', default=11111,
+parser.add_argument('-p', '--port', default=11111, type=int
                     help="Port to use")
 parser.add_argument('-d', '--debug', default=0, type=int, help="Debug level")
 
